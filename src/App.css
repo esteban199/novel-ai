@@ -40,3 +40,81 @@
 .read-the-docs {
   color: #888;
 }
+
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #343541;
+}
+
+.panel-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1800px;
+  margin: 0 auto;
+  height: calc(100vh - 40px);
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #444654;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.novel-input {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #565869;
+  border-radius: 8px;
+  background-color: #40414f;
+  color: white;
+  resize: none;
+  margin-bottom: 15px;
+}
+
+.novel-input:focus {
+  outline: none;
+  border-color: #6b6c7b;
+}
+
+.analyze-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #19c37d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.analyze-button:hover {
+  background-color: #15a76c;
+}
+
+.analyze-button:disabled {
+  background-color: #2c2d35;
+  cursor: not-allowed;
+}
+
+.analysis-output {
+  flex: 1;
+  padding: 15px;
+  background-color: #40414f;
+  border-radius: 8px;
+  color: white;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #8e8ea0;
+}
